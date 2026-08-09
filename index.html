@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>姜智胜 · 个人页</title>
+  <style>
+    /* === 全局重置 === */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", monospace;
+      background: #f5f5f0;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* === 主卡片 === */
+    .card {
+      max-width: 680px;
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #e5e5e0;
+      border-radius: 20px;
+      padding: 48px 40px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    /* === 头部 === */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #e0e0d8;
+      background: linear-gradient(135deg, #f0f0e8, #ffffff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+      color: #22a65e;
+      flex-shrink: 0;
+    }
+    .header-info h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+      color: #1a1a1a;
+    }
+    .header-info .tagline {
+      font-size: 14px;
+      color: #666;
+      font-family: "SF Mono", "Fira Code", monospace;
+    }
+    .header-info .tagline span {
+      color: #22a65e;
+    }
+
+    /* === 分隔线 === */
+    .divider {
+      height: 1px;
+      background: #e5e5e0;
+      margin: 28px 0;
+    }
+
+    /* === 技能标签 === */
+    .skills-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #999;
+      margin-bottom: 12px;
+    }
+    .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid #e0e0d8;
+      background: #f8f8f5;
+      color: #444;
+      transition: all 0.2s;
+    }
+    .tag:hover {
+      border-color: #22a65e;
+      color: #22a65e;
+      background: #f0faf3;
+    }
+
+    /* === 简介 === */
+    .bio {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    /* === 联系按钮 === */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 12px;
+      border: 1px solid #d0d0c8;
+      background: transparent;
+      color: #1a1a1a;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #22a65e;
+      color: #ffffff;
+      border-color: #22a65e;
+    }
+    .btn span {
+      font-size: 18px;
+    }
+
+    /* === 底部 === */
+    .footer {
+      margin-top: 32px;
+      font-size: 11px;
+      color: #999;
+      font-family: "SF Mono", "Fira Code", monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- 头部 -->
+    <div class="header">
+      <div class="avatar">J</div>
+      <div class="header-info">
+        <h1>Jason</h1>
+        <div class="tagline"><span>$</span> 数据分析师 · 正在学习 Vibe Coding</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 简介 -->
+    <div class="bio">
+      用 Python 从数据中发现故事，正在用 AI 把分析能力搬到网页上。<br>
+      相信好的工具应该让更多人能创造，而不只是消费。
+    </div>
+
+    <!-- 技能 -->
+    <div class="skills-label">// 技能</div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">数据分析</span>
+      <span class="tag">Vibe Coding</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Git</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 联系 -->
+    <a class="btn" href="mailto:your-email@example.com">
+      <span>→</span> 联系我
+    </a>
+
+    <div class="footer">
+      ~/profile.html · 最后更新 2026-08-07
+    </div>
+  </div>
+</body>
+</html>
