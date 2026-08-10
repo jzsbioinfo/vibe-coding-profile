@@ -6,7 +6,7 @@
 
 ## 关于
 
-- 制作者：Jason（姜智胜）
+- 制作者：Jason
 - 技术方式：Vibe Coding + GitHub Pages
 - 语言：HTML + CSS
 - 工具辅助：Hermes AI 学习导师系统
